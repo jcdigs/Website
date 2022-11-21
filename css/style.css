@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+:root {
+  --main-color: #06662b;
+  --bg-color: rgb(244, 238, 224);
+  --text-color: black;
+}
+body.active {
+    --text-color: rgb(246, 248, 232);
+    --bg-color: #1c1c1c;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+*::selection {
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    color: var(--text-color);
+}
+nav ul li a:hover{
+    color: #06662b;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background-color: #06662b;
+    margin: auto;
+    display: block;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+.btn{
+    background: #06662b;
+    border-radius: 5px;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background: transparent;
+    color: #06662b;
+    border: 1px solid #06662b;
+}
+#darkmode {
+    padding: 25px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+.info h1{
+    font-size: 40px;
+    color: black;
+    color: var(--text-color);
+}
+.info h1 span{
+   animation: colorchangeproject 3s infinite;
+}
+.info p{
+    color: black;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-box:hover .man-img{
+    left: 54%;
+}
+.social{
+    margin-left: 8%;
+    margin-top: 20px;
+}
+.social a{
+    font-size: 28px;
+    color: black;
+    margin-right: 20px;
+    color: var(--text-color);
+}
+.social a:hover{
+    color: #06662b;
+}
+@keyframes colorchangeproject{
+	0%{color: #c5c5c5;}
+	25%{color:#06662b;}
+	50%{color: #c5c5c5;}
+	100%{color:#06662b; }
+}
