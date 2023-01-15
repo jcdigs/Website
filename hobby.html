@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <script src="https://kit.fontawesome.com/f4cd693873.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hobbies</title>
+
+</head>
+<body>
+    <section id="sub1-header">
+		<nav>
+			<a href="./index.html"><img src="./img/logo.png" class="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="hobby.html" class="contact">Hobbies</a></li>
+					<li><a href="school.html">School</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                    <div class="bx bx-moon" id="darkmode"></div>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+    </section>
+
+    <section class="hobby">
+		<h1>Hobbies</h1>
+
+		<div class="row">
+			<div class="hobbies-col">
+				<img src="./img/basketball.jpg">
+				<h3>
+					Basketball
+				</h3>
+				<p>
+					I learned playing basketball when i was 3 years old. My Father taught me how to play. I always watching NBA and my favorite player when i was a kid is Kobe Bryant.
+				</p>
+			</div>
+			<div class="hobbies-col">
+				<img src="./img/photography.jpg">
+				<h3>
+					Photography
+				</h3>
+				<p>
+					I like taking pictures whenever i see a beautiful scenery, animals, and some stuffs that is good to take a picture.
+				</p>
+			</div>
+			<div class="hobbies-col">
+				<img src="./img/cycling.jpg">
+				<h3>
+					Cycling
+				</h3>
+				<p>
+					Cycling makes me feel at ease and release any stress. With cycling i was able to do such things in a calm way.
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+            <div class="hobbies-col">
+                <img src="./img/travel.jpg">
+                <h3>
+                    Travel
+                </h3>
+                <p>
+                    I like traveling from city to another city or province. God Willing in the future i want to go to Amsterdam.
+                </p>
+            </div>
+            <div class="hobbies-col">
+                <img src="./img/gaming.jpg">
+                <h3>
+                    Gaming
+                </h3>
+                <p>
+                    Playing a game makes me stress free. It also makes my brain to function well like solving a problems on how to counter the enemies.
+                </p>
+            </div>
+            <div class="hobbies-col">
+                <img src="./img/badminton.jpg">
+                <h3>
+                    Badminton
+                </h3>
+                <p>
+                    The second sports that i love to play when i was a kid. It is simple and easy to play.
+                </p>
+            </div>
+        </div>
+	</section>
+
+
+    <section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/johncarlo.diga18"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/_jcdiga"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/jcdigs_/"><i class="fa fa-instagram"></i></a>
+		</div>
+		<p>Made with <i class="fa fa-heart-o"></i> by Jisi. &copy; Copyrights 2022-2023</p>
+		<a class="gotopbtn" href="#sub1-header"><i class="fa-solid fa-circle-up"></i></a>
+	</section>
+
+    <script src="./js/script.js"></script>
+
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+	</script>
+
+</body>
+</html>
