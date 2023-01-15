@@ -4,27 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
     <script src="https://kit.fontawesome.com/f4cd693873.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>About</title>
+
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            
-            <img src="./img/logo.png" class="logo">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="./anime.html">Anime</a></li>
-                <li><a href="./favorites.html">Favorites</a></li>
-                <a href="#" class="btn">Gallery</a>
-                <div class="bx bx-moon" id="darkmode"></div>
-            </ul>
-        </nav>
+    <section id="sub-header">
+		<nav>
+			<a href="./index.html"><img src="./img/logo.png" class="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html" class="contact">About Me</a></li>
+					<li><a href="hobby.html">Hobbies</a></li>
+					<li><a href="school.html">School</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                    <div class="bx bx-moon" id="darkmode"></div>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+    </section>
 
-        <script src="./js/script.js"></script>
+	<section class="myskills">
+		<header>
+			My Skills
+		</header>
+		<div class="skill">
+			<div class="set">
+				<span class="fa-solid fa-globe"></span>
+				<header>Web Designer</header>
+				<div class="list">
+					<label>HTML</label>
+					<i class="fa-brands fa-html5"></i>
+				</div>
+				<div class="list">
+					<label>CSS</label>
+					<i class="fa-brands fa-css3-alt"></i>
+				</div>
+				<div class="list">
+					<label>Javascript</label>
+					<i class="fa-brands fa-square-js"></i>
+				</div>
+			</div>
+
+			<div class="set">
+				<span class="fa-solid fa-language"></span>
+				<header>Languages</header>
+				<div class="list">
+					<label>Java</label>
+					<i class="fa-brands fa-java"></i>
+				</div>
+				<div class="list">
+					<label>C Sharp</label>
+					<i class="fa-solid fa-c"></i>
+				</div>
+				<div class="list">
+					<label>Python</label>
+					<i class="fa-brands fa-python"></i>
+				</div>	
+			</div>
+				
+			<div class="set">
+					<span class="fa-brands fa-phoenix-framework"></span>
+					<header>Framework</header>
+				<div class="list">
+					<label>Node.js</label>
+					<i class="fa-brands fa-node-js"></i>
+				</div>
+				<div class="list">
+					<label>Laravel</label>
+					<i class="fa-brands fa-laravel"></i>
+				</div>
+				<div class="list">
+					<label>Bootsrap</label>
+					<i class="fa-brands fa-bootstrap"></i>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section class="about-us">
+		<hr><br>
+        <h1>About Me</h1>
+		<div class="row">
+			<div class="about-col">
+				<h2>John Carlo F. Diga</h2>
+				<p>Hello! You can call me "JC" and i'm 20 years old. I lived in Monserrat Subdivision in Santa Cruz Laguna. Currently studying in Laverdad Christian College - Apalit, second year student of Associate in 
+				Computer Technology. I have two brothers and i'm the youngest. I like to become a Web Designer or some stuffs that are related to designing like digital arts,
+				graphics design and others that you can think of.
+				</p>
+
+				<p>Being a La Verdarian is not easy. You have to work hard and have the ability to manage your time but at the same time
+				it makes you feel comfortable on the things that surrounds you. La Verdad Christian College makes me a better person than i was before.
+				From the things that i didn't know that i can do to the things that i easily do with God's help.		
+				</p>
+				<a href="" class="hero-btn">Visit my Youtube</a>
+			</div>
+			<div class="about-col">
+				<img src="./img/about1.jpg">
+			</div>
+	</section>
+
+	<section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/johncarlo.diga18"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/_jcdiga"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/jcdigs_/"><i class="fa fa-instagram"></i></a>
+		</div>
+		<p>Made with <i class="fa fa-heart-o"></i> by Jisi. &copy; Copyrights 2022-2023</p>
+		<a class="gotopbtn" href="#sub-header"><i class="fa-solid fa-circle-up"></i></a>
+	</section>
+
+    <script src="./js/script.js"></script>
+
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+	</script>
+
 </body>
 </html>
