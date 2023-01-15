@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <script src="https://kit.fontawesome.com/f4cd693873.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>School</title>
+
+</head>
+<body>
+    <section id="sub3-header">
+		<nav>
+			<a href="./index.html"><img src="./img/logo.png" class="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="hobby.html">Hobbies</a></li>
+					<li><a href="school.html" class="contact">School</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                    <div class="bx bx-moon" id="darkmode"></div>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+    </section>
+
+    <section id="course">
+		<h1>
+			La Verdad Christian College
+		</h1>	
+		<div class="row">
+			<div class="course-col">
+				<h3>
+					First
+				</h3>
+				<p>
+                    The La Verdad Christian College or LVCC is a private non-stock, non-sectarian educational institution established in Apalit, Pampanga, Philippines.
+				</p>
+			</div>
+			<div class="course-col">
+				<h3>
+                    Second
+				</h3>
+				<p>
+                    It was established in 1998 by its founding chairman Bro. Eli Soriano. Currently, Dr. Daniel Razon serves as the president.</p>
+                </p>
+			</div>
+			<div class="course-col">
+				<h3>
+					Third
+				</h3>
+				<p>
+                    It is the first private school in the Philippines that grants scholarship programs to deserving students by providing tuition-free education and no miscellaneous fees.
+				</p>
+			</div>
+		</div>
+		<hr><br>
+	</section>
+
+    <section class="friends">
+        <h1>My Friends</h1>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="./img/jm-modified.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h4>Johnmack Faeldonia</h4>
+                        <h5>The Jopay</h5>
+                    </div>
+                    <div class="sci">
+                        <a href="https://web.facebook.com/johnmac.pareja"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/johnmack_faeldonia/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="./img/rolands-modified.jpg" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h4>Rolando Majait</h4>
+                        <h5>The Junior</h5>
+                    </div>
+                    <div class="sci">
+                        <a href="https://web.facebook.com/rolando.majait.5"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/rolanxiee16/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="./img/jb-modified.jpg" alt="">
+                    </div>
+                    <div class="contentBx">
+                        <h4>Jayvee Brian Ibale</h4>
+                        <h5>The Cherifer</h5>
+                    </div>
+                    <div class="sci">
+                        <a href="https://web.facebook.com/jayvee.brian.96"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/jeibyyy_briiaan/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="lvcc-school">   
+            <div class="cta">
+                <h1>Want to know more about LVCC? <br> Just click the button below</h1>
+                <a href="https://laverdad.edu.ph/" class="hero-btn1">Go to LVCC</a>
+            </div>
+    </section>
+
+    <section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/johncarlo.diga18"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/_jcdiga"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/jcdigs_/"><i class="fa fa-instagram"></i></a>
+		</div>
+		<p>Made with <i class="fa fa-heart-o"></i> by Jisi. &copy; Copyrights 2022-2023</p>
+        <a class="gotopbtn" href="#sub3-header"><i class="fa-solid fa-circle-up"></i></a>
+	</section>
+
+    <script src="./js/script.js"></script>
+
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+	</script>
+
+</body>
+</html>
