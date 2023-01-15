@@ -4,43 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
     <script src="https://kit.fontawesome.com/f4cd693873.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
 
-    <div class="hero">
-        <nav>
-            
-            <img src="./img/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./anime.html">Anime</a></li>
-                <li><a href="./favorites.html">Favorites</a></li>
-                <a href="#" class="btn">Gallery</a>
-                <div class="bx bx-moon" id="darkmode"></div>
-            </ul>
-        </nav>
-        <div class="info">
+    <title>Home</title>
+
+</head>
+<body>
+    <section id="header">
+		<nav>
+			<a href="./index.html"><img src="./img/logo.png" class="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" class="contact">Home</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="hobby.html">Hobbies</a></li>
+					<li><a href="school.html">School</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                    <div class="bx bx-moon" id="darkmode"></div>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div class="info">
             <h1>I am, <span>John Carlo Diga</span></h1>
             <h1>Aspiring Web Designer</h1>
             <p>Second Year student of Associate in Computer Technology<br> La Verdad Christian College.</p>
-            <a href="#" class="btn">Contact Me</a>
         </div>
-        <div class="img-box">
-            <img src="./img/homeimg.png" class="man-img">
-        </div>
-        <div class="social">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-    </div>
-    
+
+		<div class="icon-bar">
+			<a href="https://www.facebook.com/johncarlo.diga18" class='facebook' target='_blank'>
+				Facebook<i class=" fab fa-facebook-square"></i>
+			</a>
+			<a href="https://twitter.com/_jcdiga" class='twitter' target='_blank'>
+				Twitter<i class=" fab fa-twitter-square"></i>
+			</a>
+			
+			<a href="https://www.instagram.com/jcdigs_/" class='instagram' target='_blank'>
+				Instagram<i class="fab fa-instagram"></i>
+			</a>
+		</div>
+	</section>
+
+	<section class="slide">
+
+		<h2>Memories</h2>
+		<p>Memories that i can think of whenever i feel sad or alone.</p>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<img src="./img/group.jpeg" style="width:800px" height="600px">
+				<div class="text">ACT 2</div>
+			  </div>
+			  
+			<div class="mySlides fade">
+				<img src="./img/lvcc.jpg" style="width:800px" height="600px">
+				<div class="text">LVCC</div>
+			  </div>
+
+			<div class="mySlides fade">
+			  <img src="./img/kappu.jpg" style="width:800px" height="600px">
+			  <div class="text">Kappu</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="./img/fam.jpg" style="width:800px" height="600px">
+			  <div class="text">Family</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="./img/skyranch.jpg" style="width:800px" height="600px">
+			  <div class="text">Skyranch</div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="./img/group1.jpeg" style="width:800px" height="600px">
+				<div class="text">ACT 2</div>
+			  </div>	
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			  <span class="dot" onclick="currentSlide(6)"></span> 
+			</div>	
+	</section>
+
+
+    <section class="campus">
+		<hr><br>
+		<h2>
+		Photographer for a moment
+		</h2>
+		<p>
+        <br>This is some of my sample pictures that i took in my cellphone. <br> (La Verdad Christian College)
+		</p>
+
+		<div class="row">
+			<div class="campus-col">
+				<img src="./img/tree.jpg">
+				<div class="layer">
+					<h3>La Verdad</h3>
+				</div>
+			</div>
+			<div class="campus-col">
+				<img src="./img/lvcclogo.jpg">
+				<div class="layer">
+					<h3>Christian</h3>
+				</div>
+			</div>
+            <div class="campus-col">
+				<img src="./img/building1.jpg">
+				<div class="layer">
+					<h3>College</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/johncarlo.diga18"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/_jcdiga"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/jcdigs_/"><i class="fa fa-instagram"></i></a>
+		</div>
+		<p>Made with <i class="fa fa-heart-o"></i> by Jisi. &copy; Copyrights 2022-2023</p>
+		<a class="gotopbtn" href="#header"><i class="fa-solid fa-circle-up"></i></a>
+	</section>
+
     <script src="./js/script.js"></script>
-    
+
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+		var scroll = new SmoothScroll('a[href*="#"]');
+
+	</script>
+
 </body>
 </html>
